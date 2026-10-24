@@ -1,9 +1,28 @@
-print("My name is subhan.")
+city = input("Enter your city name: ")
+temp = float(input("Enter the current temperature in Celsius: "))
 
-print("i do swimming.")
+if temp > 35:
+    print("Warning: It is very hot today!")
 
-print("i like to play basketball.")
+if temp > 25:
+    print("Great day to go outside!")
+else:
+    print("Grab a jacket before you go out!")
 
-print("i like to play football.")
+if temp > 35:
+    print("Weather: Scorching hot")
+elif temp > 25:
+    print("Weather: Warm and sunny")
+elif temp > 15:
+    print("Weather: Cool and breezy")
+else:
+    print("Weather: Cold - stay warm!")
 
-print("i like to cycle.")
+import datetime
+import calendar
+
+now = datetime.datetime.now()
+print("City:", city)
+print("Time now:", now)
+
+print(calendar.calendar(now.year))
